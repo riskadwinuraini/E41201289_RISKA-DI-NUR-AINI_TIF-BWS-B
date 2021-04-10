@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Graph;
+package DFS;
 
 /**
  *
@@ -12,23 +12,22 @@ package Graph;
 public class GraphApp {
     public static void main(String[] args) {
         
-        Graph theGraph = new Graph();
+        Graphdfs theGraphdfs = new Graphdfs();
         
-        theGraph.addVertex('A'); //0
-        theGraph.addVertex('B'); //1
-        theGraph.addVertex('C'); //2
-        theGraph.addVertex('D'); //3
-        theGraph.addVertex('E'); //4
+        theGraphdfs.addVertex('A'); //0
+        theGraphdfs.addVertex('B'); //1
+        theGraphdfs.addVertex('C'); //2
+        theGraphdfs.addVertex('D'); //3
+        theGraphdfs.addVertex('E'); //4
         
-        theGraph.addEdge(0, 1); // AB
-        theGraph.addEdge(1, 2); // BC
-        theGraph.addEdge(2, 3); // AD
-        theGraph.addEdge(3, 4); // DE
+        theGraphdfs.addEdge(0, 1); //AB
+        theGraphdfs.addEdge(1, 2); //BC
+        theGraphdfs.addEdge(2, 3); //AD
+        theGraphdfs.addEdge(3, 4); //DE
         
-        //theGraph.bfs();
-        
-        theGraph.display();
-    //    theGraph.bfs();
+        System.out.print("Visits DFS: ");
+        theGraphdfs.dfs();
+        System.out.println();
     }
     
 }
